@@ -1,0 +1,22 @@
+module.exports = {
+  collectCoverageFrom: [
+    '**/*.{ts,tsx}',
+    '!**/node_modules/**',
+    '!**/__mocks__/**',
+    '!**/.templates/**',
+    '!**/types/**',
+    '!**/typings/**',
+    '!**/__tests__/**',
+    '!**/__stories__/**',
+    '!**/__examples__/**',
+    '!**/pages/**',
+    '!**/*.d.ts',
+    '!helpers/Testing/ScreenshotTest.tsx',
+    '!helpers/polyfills.ts',
+  ],
+  testEnvironment: 'jsdom',
+  testMatch: ['**/tests/**/*.(spec|snap).ts?(x)'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  coverageDirectory: 'jest-coverage',
+  moduleDirectories: ['node_modules', '<rootDir>'],
+};
