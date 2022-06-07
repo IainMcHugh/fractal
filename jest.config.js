@@ -11,7 +11,6 @@ module.exports = {
     '!**/__examples__/**',
     '!**/pages/**',
     '!**/*.d.ts',
-    '!helpers/Testing/ScreenshotTest.tsx',
     '!helpers/polyfills.ts',
   ],
   testEnvironment: 'jsdom',
