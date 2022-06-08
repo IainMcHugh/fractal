@@ -16,4 +16,9 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   coverageDirectory: 'jest-coverage',
   moduleDirectories: ['node_modules', '<rootDir>'],
+  coverageThreshold: {
+    global: {
+      lines: 80,
+    },
+  },
 };
