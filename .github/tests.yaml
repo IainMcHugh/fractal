@@ -1,10 +1,6 @@
 name: Functional Tests
 
-on:
-  pull_request:
-  push:
-    branches:
-      - master
+on: pull_request
 
 jobs:
   jest-run:
