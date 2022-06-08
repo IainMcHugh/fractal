@@ -10,6 +10,7 @@ module.exports = {
     '!<rootDir>/components/page/**',
     '!**/*.d.ts',
     '!**/types/**',
+    '!**/*.config.ts',
   ],
   testEnvironment: 'jsdom',
   testMatch: ['<rootDir>/tests/**/*.spec.ts?(x)'],

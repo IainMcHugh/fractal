@@ -15,4 +15,4 @@
 
 import './commands';
 import './globals';
-import './functions';
+import './helpers';

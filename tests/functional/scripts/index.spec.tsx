@@ -1,9 +1,9 @@
+import jest from '@jest/globals';
+
 import { getFullPath } from 'scripts';
 
 describe('scripts', () => {
   test('getFullPath', () => {
-    expect(getFullPath('index.spec.tsx')).toBe(
-      '/Users/iainmchugh/Documents/iain/web_design/nextjs-template/scripts/index.spec.tsx'
-    );
+    jest.expect(getFullPath('index.spec.tsx')).toBe('index.spec.tsx');
   });
 });

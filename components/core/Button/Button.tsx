@@ -1,14 +1,20 @@
-import { type ButtonHTMLAttributes } from 'react';
+import type { ButtonHTMLAttributes } from 'react';
 
 import * as Style from './styles/Button.styles';
 
 type TButton = ButtonHTMLAttributes<HTMLButtonElement> & {
+  svariant?: 'PRIMARY' | 'SECONDARY';
   className?: string;
 };
 
-function Button({ children, className, ...rest }: TButton) {
+function Button({
+  children,
+  svariant = 'PRIMARY',
+  className,
+  ...rest
+}: TButton) {
   return (
-    <Style.Button className={className} {...rest}>
+    <Style.Button svariant={svariant} className={className} {...rest}>
       {children}
     </Style.Button>
   );
