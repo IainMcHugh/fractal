@@ -37,3 +37,7 @@ All tests live in the `/tests` directory. End-to-end (UI) tests are written usin
 ## Pipelines
 
 By default there are two YAML files defined in the `.github` directory, that should run all existing tests.
+
+## Designs
+
+Designs can be found at [figma](#)
