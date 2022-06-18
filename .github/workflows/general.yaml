@@ -1,0 +1,15 @@
+name: 'General checks'
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm i
+    - name: Run Lint
+      run: npm run lint
+    - name: Run type checks
+      run: npm run type-check

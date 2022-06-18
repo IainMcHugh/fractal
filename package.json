@@ -14,13 +14,16 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "styled-components": "^5.3.5"
+    "react-query": "^3.39.1",
+    "styled-components": "^5.3.5",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
